@@ -1,4 +1,4 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_button_event" id="dzDLGc27;)dl48J:Y]?i" x="624" y="-12"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_while" id="qv@!w`#}c%p/#-UvZUjr"><value name="COND"><shadow type="logic_boolean" id="a+dpTCn/O7{v9.sJfBHk"><field name="BOOL">TRUE</field></shadow></value><statement name="DO"><block type="device_show_leds" id="`2kt2!%h%^E0%v|8P_+F"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_button_event" id="dzDLGc27;)dl48J:Y]?i" x="536" y="-212"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_while" id="qv@!w`#}c%p/#-UvZUjr"><value name="COND"><shadow type="logic_boolean" id="a+dpTCn/O7{v9.sJfBHk"><field name="BOOL">TRUE</field></shadow></value><statement name="DO"><block type="device_show_leds" id="`2kt2!%h%^E0%v|8P_+F"><field name="LEDS">`
         . . . . . 
         . . . . . 
         . . # . . 
@@ -28,4 +28,4 @@
         . . . . . 
         . . . . . 
         # . . . #
-        `</field></block></next></block></next></block></next></block></next></block></statement></block></statement></block><block type="pxt-on-start" id="+?8GB_3?NquOZ!;y4]b2" x="88" y="200"><statement name="HANDLER"><block type="playMelody" id=":-klad-SZi(;DWejY2zI"><value name="melody"><shadow type="melody_editor" id="7`Sxa*+*eU`xZ6UD,l`T"><field name="melody">"C D E F G A B C5 "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="gTHv,%,w0E4r^(dFEb!n"><mutation min="40" max="500" label="Tempo" precision="0"></mutation><field name="SLIDER">200</field></shadow></value></block></statement></block></xml>
+        `</field></block></next></block></next></block></next></block></next></block></statement></block></statement></block><block type="pxt-on-start" id="+?8GB_3?NquOZ!;y4]b2" x="0" y="0"><statement name="HANDLER"><block type="playMelody" id=":-klad-SZi(;DWejY2zI"><value name="melody"><shadow type="melody_editor" id="7`Sxa*+*eU`xZ6UD,l`T"><field name="melody">"C D E F G A B C5 "</field></shadow></value><value name="tempo"><shadow type="math_number_minmax" id="gTHv,%,w0E4r^(dFEb!n"><mutation min="40" max="500" label="Tempo" precision="0"></mutation><field name="SLIDER">200</field></shadow></value></block></statement></block></xml>
