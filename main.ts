@@ -1,41 +1,39 @@
 input.onButtonPressed(Button.A, function () {
-    while (true) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . # . .
-            . . . . .
-            . . . . .
-            `)
-        basic.showLeds(`
-            . . . . .
-            . . # . .
-            . # . # .
-            . . # . .
-            . . . . .
-            `)
-        basic.showLeds(`
-            . . # . .
-            . # . # .
-            # . . . #
-            . # . # .
-            . . # . .
-            `)
-        basic.showLeds(`
-            . # . # .
-            # . . . #
-            . . . . .
-            # . . . #
-            . # . # .
-            `)
-        basic.showLeds(`
-            # . . . #
-            . . . . .
-            . . . . .
-            . . . . .
-            # . . . #
-            `)
-    }
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . # . .
+        . . . . .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . . # . .
+        . # . # .
+        . . # . .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . # . .
+        . # . # .
+        # . . . #
+        . # . # .
+        . . # . .
+        `)
+    basic.showLeds(`
+        . # . # .
+        # . . . #
+        . . . . .
+        # . . . #
+        . # . # .
+        `)
+    basic.showLeds(`
+        # . . . #
+        . . . . .
+        . . . . .
+        . . . . .
+        # . . . #
+        `)
 })
 input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index < 3; index++) {
@@ -91,6 +89,15 @@ input.onGesture(Gesture.Shake, function () {
         # # # # #
         . . . . .
         . . . . .
+        `)
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
         `)
 })
 music.playMelody("C D E F G A B C5 ", 200)
