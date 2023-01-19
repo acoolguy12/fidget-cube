@@ -101,5 +101,12 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
         # # # # #
         # # # # #
         `)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
 music.playMelody("C D E F G A B C5 ", 200)
