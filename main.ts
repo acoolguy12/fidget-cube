@@ -41,11 +41,11 @@ input.onGesture(Gesture.TiltLeft, function () {
 })
 input.onGesture(Gesture.ScreenUp, function () {
     basic.showLeds(`
-        . # . # .
-        . # . # .
-        . # # # .
-        . # . # .
-        . # . # .
+        # . # . .
+        # . # . .
+        # # # . .
+        # . # . .
+        # . # . .
         `)
     basic.showLeds(`
         . # # # .
@@ -55,18 +55,18 @@ input.onGesture(Gesture.ScreenUp, function () {
         . # # # .
         `)
     basic.showLeds(`
-        . # . . .
-        . # . . .
-        . # . . .
-        . # . . .
-        . # # # .
+        . . # . .
+        . . # . .
+        . . # . .
+        . . # . .
+        . . # # #
         `)
     basic.showLeds(`
-        . # . . .
-        . # . . .
-        . # . . .
-        . # . . .
-        . # # # .
+        # . . . .
+        # . . . .
+        # . . . .
+        # . . . .
+        # # # . .
         `)
     basic.showLeds(`
         . # # # .
