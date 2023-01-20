@@ -35,9 +35,46 @@ input.onButtonPressed(Button.A, function () {
         # . . . #
         `)
 })
-input.onGesture(Gesture.ScreenDown, function () {
-    music.ringTone(988)
-    music.ringTone(131)
+input.onGesture(Gesture.TiltLeft, function () {
+    music.stopAllSounds()
+    basic.clearScreen()
+})
+input.onGesture(Gesture.ScreenUp, function () {
+    basic.showLeds(`
+        . # . # .
+        . # . # .
+        . # # # .
+        . # . # .
+        . # . # .
+        `)
+    basic.showLeds(`
+        . # # # .
+        . # . . .
+        . # # # .
+        . # . . .
+        . # # # .
+        `)
+    basic.showLeds(`
+        . # . . .
+        . # . . .
+        . # . . .
+        . # . . .
+        . # # # .
+        `)
+    basic.showLeds(`
+        . # . . .
+        . # . . .
+        . # . . .
+        . # . . .
+        . # # # .
+        `)
+    basic.showLeds(`
+        . # # # .
+        . # . # .
+        . # . # .
+        . # . # .
+        . # # # .
+        `)
 })
 input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index < 3; index++) {
@@ -96,6 +133,10 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
         . . . . .
         `)
+})
+input.onGesture(Gesture.TiltRight, function () {
+    music.ringTone(988)
+    music.ringTone(131)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showLeds(`
