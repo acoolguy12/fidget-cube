@@ -39,43 +39,6 @@ input.onGesture(Gesture.TiltLeft, function () {
     music.stopAllSounds()
     basic.clearScreen()
 })
-input.onGesture(Gesture.ScreenUp, function () {
-    basic.showLeds(`
-        # . # . .
-        # . # . .
-        # # # . .
-        # . # . .
-        # . # . .
-        `)
-    basic.showLeds(`
-        . # # # .
-        . # . . .
-        . # # # .
-        . # . . .
-        . # # # .
-        `)
-    basic.showLeds(`
-        . . # . .
-        . . # . .
-        . . # . .
-        . . # . .
-        . . # # #
-        `)
-    basic.showLeds(`
-        # . . . .
-        # . . . .
-        # . . . .
-        # . . . .
-        # # # . .
-        `)
-    basic.showLeds(`
-        . # # # .
-        . # . # .
-        . # . # .
-        . # . # .
-        . # # # .
-        `)
-})
 input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index < 3; index++) {
         music.playTone(262, music.beat(BeatFraction.Double))
@@ -155,3 +118,38 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
         `)
 })
 music.playMelody("C D E F G A B C5 ", 200)
+basic.showLeds(`
+    # . # . .
+    # . # . .
+    # # # . .
+    # . # . .
+    # . # . .
+    `)
+basic.showLeds(`
+    . # # # .
+    . # . . .
+    . # # # .
+    . # . . .
+    . # # # .
+    `)
+basic.showLeds(`
+    . . # . .
+    . . # . .
+    . . # . .
+    . . # . .
+    . . # # #
+    `)
+basic.showLeds(`
+    # . . . .
+    # . . . .
+    # . . . .
+    # . . . .
+    # # # . .
+    `)
+basic.showLeds(`
+    . # # # .
+    . # . # .
+    . # . # .
+    . # . # .
+    . # # # .
+    `)
