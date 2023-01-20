@@ -35,6 +35,10 @@ input.onButtonPressed(Button.A, function () {
         # . . . #
         `)
 })
+input.onGesture(Gesture.ScreenDown, function () {
+    music.ringTone(988)
+    music.ringTone(131)
+})
 input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index < 3; index++) {
         music.playTone(262, music.beat(BeatFraction.Double))
