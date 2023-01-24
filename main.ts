@@ -39,6 +39,9 @@ input.onGesture(Gesture.TiltLeft, function () {
     music.stopAllSounds()
     basic.clearScreen()
 })
+input.onGesture(Gesture.ScreenDown, function () {
+    music.playMelody("E A B F D C5 G E ", 120)
+})
 input.onButtonPressed(Button.AB, function () {
     for (let index = 0; index < 3; index++) {
         music.playTone(262, music.beat(BeatFraction.Double))
@@ -98,8 +101,14 @@ input.onGesture(Gesture.Shake, function () {
         `)
 })
 input.onGesture(Gesture.TiltRight, function () {
-    music.ringTone(988)
-    music.ringTone(131)
+    rps = randint(1, 3)
+    if (rps == 1) {
+        basic.showString("R")
+    } else if (rps == 2) {
+        basic.showString("P")
+    } else {
+        basic.showString("S")
+    }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showLeds(`
@@ -117,39 +126,6 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
         . . . . .
         `)
 })
+let rps = 0
 music.playMelody("C D E F G A B C5 ", 200)
-basic.showLeds(`
-    # . # . .
-    # . # . .
-    # # # . .
-    # . # . .
-    # . # . .
-    `)
-basic.showLeds(`
-    . # # # .
-    . # . . .
-    . # # # .
-    . # . . .
-    . # # # .
-    `)
-basic.showLeds(`
-    . . # . .
-    . . # . .
-    . . # . .
-    . . # . .
-    . . # # #
-    `)
-basic.showLeds(`
-    # . . . .
-    # . . . .
-    # . . . .
-    # . . . .
-    # # # . .
-    `)
-basic.showLeds(`
-    . # # # .
-    . # . # .
-    . # . # .
-    . # . # .
-    . # # # .
-    `)
+basic.showString("Hello!")
